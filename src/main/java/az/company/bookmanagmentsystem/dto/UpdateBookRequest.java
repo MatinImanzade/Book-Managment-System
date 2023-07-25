@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
@@ -19,6 +20,6 @@ public class UpdateBookRequest {
     private String author;
 
     @NotNull(message = "Book release date must be defined")
-    private Integer releaseDate;
+    private LocalDate releaseDate;
 
 }

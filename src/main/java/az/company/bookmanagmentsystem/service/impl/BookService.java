@@ -5,14 +5,15 @@ import az.company.bookmanagmentsystem.exception.BookNotFoundException;
 import az.company.bookmanagmentsystem.dto.BookDto;
 import az.company.bookmanagmentsystem.dto.CreateBookRequest;
 import az.company.bookmanagmentsystem.dto.UpdateBookRequest;
+//import az.company.bookmanagmentsystem.mapper.BookMapper;
+//import az.company.bookmanagmentsystem.mapper.ManualBookMapper;
+//import az.company.bookmanagmentsystem.mapper.BookMapperImpl;
 import az.company.bookmanagmentsystem.mapper.ManualBookMapper;
 import az.company.bookmanagmentsystem.model.Book;
 import az.company.bookmanagmentsystem.repository.BookRepository;
-import az.company.bookmanagmentsystem.service.inter.BookServeiceInter;
+import az.company.bookmanagmentsystem.service.inter.BookServiceInter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
@@ -28,8 +29,8 @@ import java.util.stream.Collectors;
  */
 @Service
 @RequiredArgsConstructor
-@Slf4j
-public class BookService implements BookServeiceInter {
+@Slf4j // loglama etmek ucun kitabxana
+public class BookService implements BookServiceInter {
     private final BookRepository bookRepository;
     private final ManualBookMapper manualBookMapper;
 

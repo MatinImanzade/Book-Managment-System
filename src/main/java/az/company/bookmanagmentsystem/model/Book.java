@@ -5,7 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
- // import javax.persistence.*;
+import java.time.LocalDate;
+
+// import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
@@ -20,5 +22,5 @@ public class Book {
     @Column
     private String author;
     @Column
-    private Integer releaseDate;
+    private LocalDate releaseDate;
 }

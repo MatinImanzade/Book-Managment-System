@@ -6,7 +6,7 @@ import az.company.bookmanagmentsystem.dto.UpdateBookRequest;
 
 import java.util.List;
 
-public interface BookServeiceInter {
+public interface BookServiceInter {
     public void createBook(CreateBookRequest createBookRequest);
 
     public List<BookDto> getAllBooks();
